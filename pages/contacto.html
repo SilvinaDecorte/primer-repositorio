@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/styless.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <div class="contc">
+     <!--inicio de header-->
+     <header class="header">
+        <div class="img1">
+            <img class="logo animate__animated animate__flip" src="../img/logoM.png" alt="imagen-logo">
+        </div>
+        <nav class="nav1">
+            <ul>
+                <li><a class="ain" href="../index.html">Inicio</a></li>
+                <li><a  class="asuc" href="./sucursales.html">Sucursal</a></li>
+                <li><a class="aprod" href="./productos.html">Productos</a></li>
+                <li><a class="aprom" href="./promociones.html">Promociones</a></li>
+                <li><a class="acont" href="./contacto.html">contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--fin de header y inicio de main-->
+        <div class="paf1">
+            <h2 class="titulo">Contactanos</h2>
+            <p>No importa el tamaño del negocio, preséntanos tu proyecto y juntos lo haremos realidad. Es independiente
+                si solamente es para una tienda o varias, o un grupo de franquicias.Nuestros proyectos se adaptan a todo
+                tipo de dimensiones y a cualquier tipología de negocio.</p>
+        </div>
+        <!--formulario-->
+        <form action="" method="get">
+            <fieldset>
+                <legend> Informacion Personal</legend>
+                <label for="Nombre">Nombre:</label>
+                <input id="Nombre" type="text" name="Nombre">
+                <label for="Apellido">Apellido: </label>
+                <input id="Apellido" type="text" name="Apellido">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="example@hotmail.com">
+                <label for="phone">telefono</label>
+                <input id="phone" type="phone">
+                <div>
+                    <!--Radio-->
+                    <label class="gender" for="gender">Sexo</label>
+                    <label for="gender">masculino</label>
+                    <input id="gender" type="radio" name="gender" value="male" checked>
+                    <label for="gender">femenino</label>
+                    <input type="radio" name="gender" value="female">
+                    <label for="gender">otro</label>
+                    <input type="radio" name="sexo" value="other">
+                </div>
+                <div>
+                    <label for="horario de Contacto">Horario de contacto</label><br>
+                    <SELEct name="horario de contacto">
+                        <Option value="M" selected>mañana</Option>
+                        <option value="T">tarde</option>
+                    </SELEct>
+                </div>
+                <label class="txt" for="Dejanos tu consulta">Dejanos tu consulta</label><br>
+                <textarea name="Dejanos tu consulta " id="" cols="30" rows="10"></textarea><br>
+                <!--checkbox-->
+                <label class="medioc" for="comunicacion">Medio de consulta</label>
+                <input type="checkbox" name="comunicacion" id="telefono">telefono
+                <input type="checkbox" name="comunicacion" id="email">Email <br>
+                <input class="enviar" type="submit" value="enviar " />
+                <input class="reset" type="reset" value="limpiar">
+            </fieldset>
+        </form>
+        <!--fin de formulario-->
+    <!--inicio de footer-->
+    <footer>
+        <img class="logo" src="../img/logo.png" alt="imagen-logo">
+        <nav>
+            <ul class="footer">
+                <li> <a href="https://www.facebook.com/De-sol-panificados-101041579004470">
+                        <img class="face" src="../img/face.png" alt="logo-facebook"></a></li>
+                <li> <a href="silvi.decorte@hotmail.com"><img class="mail" src="../img/mail.jpg"
+                            alt="icono de mail">
+                    </a></li>
+            </ul>
+        </nav>
+        <span>Idea de proyecto relizada por Silvina Decorte 2022</span>
+    </footer>
+</div>
+</body>
+</html>

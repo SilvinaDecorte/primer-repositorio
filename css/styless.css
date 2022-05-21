@@ -1,0 +1,719 @@
+* {
+    margin: 0, 5%;
+}
+
+/* fuentes descargadas a utilizar*/
+@font-face {
+    font-family: "Roboto-BlackItalic";
+    src: url(../fonts/Roboto-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Italic";
+    src: url(../fonts/Roboto-Italic.ttf)
+}
+
+/*grillaS*/
+
+.cont1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 150px auto auto auto auto auto 240px;
+    grid-template-areas: "header header"
+        "caja0 caja0"
+        "caja1 caja1"
+        "caja2 caja2"
+        "caja3 caja3"
+        "caja4 caja4"
+        "footer footer";
+}
+
+.cont2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 150px auto auto auto auto auto auto 240px;
+    grid-template-areas: "header header"
+        "caja5 caja5"
+        "caja6 caja6"
+        "caja7 caja7"
+        "caja8 caja8"
+        "caja9 caja9"
+        "table table"
+        "footer footer";
+}
+
+.cont3 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 150px auto auto auto auto auto;
+    grid-template-areas: "header header"
+        "caja10 caja10"
+        "box1 box1"
+        "caja12 caja12"
+        "box2 box2"
+        "footer footer";
+}
+
+.cont4 {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 150px auto auto auto auto auto auto;
+    grid-template-areas: "header header"
+        "parraf1 parraf1"
+        "caja16 caja16"
+        "infr infr"
+        "parraf2 parraf2"
+        "lunch lunch"
+        "footer footer";
+}
+
+.contc {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 150px auto auto auto;
+    grid-template-areas: "header header"
+        "paf1 paf1"
+        "form form"
+        "footer footer";
+}
+
+/*MEDIA QUERIES */
+@media screen and (min-width:768px) {
+    .cont1 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 10rem auto auto auto 15rem;
+        grid-template-areas: "header header"
+            "caja0 caja0"
+            "caja1 caja2"
+            "caja4 caja3"
+            "footer footer";
+    }
+
+    .cont2 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto auto 240px;
+        grid-template-areas: "header header"
+            "caja5 caja6"
+            "caja7 caja7"
+            "caja8 caja8"
+            "caja9 table"
+            "footer footer";
+    }
+
+    .cont3 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "header header"
+            "caja10 caja10"
+            "box1 box2"
+            "caja12 caja12"
+            "footer footer";
+    }
+
+    .cont4 {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: "header header"
+            "parraf1 parraf1"
+            "infr caja16"
+            "parraf2 parraf2"
+            "lunch lunch"
+            "footer footer";
+    }
+
+    .contc {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "header header"
+            "paf1 paf1"
+            "form form"
+            "footer footer";
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    .cont1 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 10rem auto auto auto 15rem;
+        grid-template-areas: "header header"
+            "caja0 caja0"
+            "caja1 caja2"
+            "caja4 caja3"
+            "footer footer";
+    }
+
+    .cont2 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 160px auto auto auto auto 240px;
+        grid-template-areas: "header header"
+            "caja5 caja6"
+            "caja7 caja7"
+            "caja8 caja8"
+            "caja9 table"
+            "footer footer";
+    }
+
+    .cont3 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "header header"
+            "caja10 caja10"
+            "box1 box2"
+            "caja12 caja12"
+            "footer footer";
+    }
+
+    .cont4 {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 160px auto auto auto auto auto;
+        grid-template-areas: "header header"
+            "parraf1 parraf1"
+            "infr caja16"
+            "parraf2 parraf2"
+            "lunch lunch"
+            "footer footer";
+    }
+
+    .contc {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 160px auto auto auto;
+        grid-template-areas: "header header"
+            "paf1 paf1"
+            "form form"
+            "footer footer";
+    }
+}
+
+header {
+    grid-area: header;
+    background-image: linear-gradient(25deg, brown, gold, orange, burlywood);
+    border-bottom: dotted 10px rgb(145, 55, 55);
+    text-align: center;
+}
+
+.caja1 {
+    grid-area: caja1;
+    margin: 10px;
+}
+
+.caja2 {
+    grid-area: caja2;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.caja0 {
+    grid-area: caja0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.caja3 {
+    grid-area: caja3;
+}
+
+.caja4 {
+    grid-area: caja4;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/*css body INDEX y elementos*/
+body {
+    background-image: url(../img/body.jpg );
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-image: linear-gradient(25deg, brown, gold, orange, burlywood);
+    border-bottom: dotted 10px rgb(145, 55, 55);
+}
+
+.nav1 ul,
+li {
+    justify-content: end;
+    display: inline-block;
+    margin: 5px;
+    font-size: 20px;
+}
+.nav1 a {
+    color:  black;
+    font-family: 'Lucida Sans',
+}
+.ain{
+    transition: all 1s;
+}
+.aprom{
+    transition: all 1s;
+}
+a.suc{
+    transition: all 1s;
+}
+.acont{
+    transition: all 1s;
+}
+aprod{
+    transition: all 1s;
+}
+
+.aprom:hover{
+    background-image: linear-gradient(orange, rgb(241, 237, 232));
+font-size: larger;
+}
+.ain:hover{
+    background-image: linear-gradient(orange,rgb(238, 234, 228));
+font-size: larger;
+}
+.aprod:hover{
+    background-image: linear-gradient(orange, rgb(241, 237, 232));
+font-size: larger;
+}
+.asuc:hover{
+    background-image: linear-gradient(orange, rgb(241, 237, 232));
+    font-size: larger;
+}
+.acont:hover{
+    background-image: linear-gradient(orange, rgb(241, 237, 232));
+font-size: larger;
+}
+
+h2,
+h3 {
+    font-family: "Roboto-BlackItalic";
+    font-size: 40px;
+}
+
+p {
+    font-family: "Roboto-BlackItalic";
+    background-color: antiquewhite;
+}
+
+/*imagenes*/
+.panes {
+    width: 25%;
+    border-style: groove;
+    border-width: 8px;
+}
+
+.frola {
+    width: 25%;
+    border-style: groove;
+    border-width: 8px;
+}
+
+.tortaf {
+    width: 25%;
+    border-style: groove;
+    border-width: 8px;
+}
+
+.img2 {
+    width: 30rem;
+    border-style: groove;
+    border-width: 8px;
+    margin: 10px;
+}
+
+.img3 {
+    width: 30rem;
+    border-style: groove;
+    border-width: 8px;
+    margin: 20px;
+}
+
+.logo {
+    width: 9rem;
+    margin-left: 15px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    background-image: linear-gradient(25deg, brown, gold, orange, burlywood);
+    border-top: dotted 10px rgb(145, 55, 55);
+}
+
+.face {
+    width: 3rem;
+}
+
+.mail {
+    width: 3rem;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+span {
+    font-family: "Roboto-Italic";
+}
+
+/*pagina sucursales*/
+
+.caja5 {
+    grid-area: caja5;
+}
+
+.caja6 {
+    grid-area: caja6;
+    display: flex;
+    justify-content: center;
+}
+
+.caja7 {
+    grid-area: caja7;
+    display: flex;
+    justify-content: space-around;
+    border-style: groove;
+    border-width: 8px;
+    margin: 10px;
+    background-color: burlywood;
+}
+
+.caja8 {
+    grid-area: caja8;
+}
+
+.caja9 {
+    grid-area: caja9;
+    margin-left: 4rem;
+}
+
+table {
+    grid-area: table;
+    background-color: burlywood;
+}
+
+/*CSS IMAGENES*/
+.local2 {
+    width: 35%;
+    height: auto;
+    margin: 40px;
+    border-style: groove;
+    border-width: 8px;
+    margin: 10px;
+}
+
+.local1 {
+    width: 80%;
+    height: auto;
+    margin: 40px;
+    border-style: groove;
+    border-width: 8px;
+    margin: 10px;
+}
+
+.mapa {
+    width: 20rem;
+    border-style: groove;
+    border-width: 8px;
+    margin: 10px;
+}
+
+.elaboracion {
+    width: 35%;
+    height: auto;
+    margin: 40px;
+    border-style: groove;
+    border-width: 8px;
+    margin: 10px;
+}
+
+/*aplicando css a tabla*/
+
+caption {
+    padding: 20px;
+    text-align: center;
+    font-family: Italic;
+    font-size: 40px;
+    caption-side: top;
+    background-color: burlywood;
+}
+
+table {
+    width: 30%;
+    border: 3px solid chocolate;
+    margin: 3rem;
+    border-collapse: collapse;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+th,
+tfoot,
+td {
+    width: 30%;
+    border: 3px solid chocolate;
+    margin: 1rem;
+}
+
+/*pagina productos APLICANDO css*/
+
+div.box1 {
+    grid-area: box1;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+div.box2 {
+    grid-area: box2;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+div.caja10 {
+    grid-area: caja10;
+    margin: 20px;
+}
+
+div.caja12 {
+    grid-area: caja12;
+    display: flex;
+    justify-content: stretch;
+    background-color: blanchedalmond;
+    border-style: double;
+    margin: 20px;
+}
+
+.chalita {
+    width: 200px;
+    height: 200px;
+    border: #5e3b03 double;
+    margin: 5px;
+}
+
+
+.tortafrutal {
+    width: 200px;
+    height: 200px;
+    border: #5e3b03 double;
+    margin: 5px;
+}
+
+.criollos {
+    width: 200px;
+    height: 200px;
+    border: #5e3b03 double;
+    margin: 5px;
+}
+
+.desayuno {
+    width: 200px;
+    height: 200px;
+    border: #5e3b03 double;
+    margin: 5px;
+}
+
+.torta1 {
+    width: 200px;
+    height: 200px;
+    border: #5e3b03 double;
+    margin: 5px;
+}
+
+.cañon {
+    width: 200px;
+    height: 200px;
+    border: #5e3b03 double;
+    margin: 5px;
+}
+
+/*listas productos*/
+
+.ipan {
+    width: 80px;
+    height: 80px;
+    margin: 2%;
+}
+
+.dtodo {
+    margin-top: 60px;
+    font-size: 30%;
+    font-family: "Roboto-BlackItalic";
+}
+
+.li1 {
+    display: list-item;
+}
+
+.li2 {
+    display: list-item;
+}
+
+.li3 {
+    display: list-item;
+}
+
+.li4 {
+    display: list-item;
+}
+
+.li5 {
+    display: list-item;
+}
+
+.li6 {
+    display: list-item;
+}
+
+.li7 {
+    display: list-item;
+}
+
+.li8 {
+    display: list-item;
+}
+
+.ipastel {
+    width: 30%;
+    margin: 0%;
+    padding: 0%;
+}
+
+.li9 {
+    display: list-item;
+}
+
+.li10 {
+    display: list-item;
+}
+
+.li11 {
+    display: list-item;
+}
+
+.ibombom {
+    width: 30%;
+}
+
+.li12 {
+    display: list-item;
+}
+
+.li13 {
+    display: list-item;
+}
+
+.li14 {
+    display: list-item;
+}
+
+/*pagina promociones*/
+
+.promo {
+    width: 50%;
+    margin: 10px;
+}
+
+div.caja16 {
+    grid-area: caja16;
+    display: flex;
+    justify-content: center;
+}
+
+div.parraf1 {
+    grid-area: parraf1;
+    margin: 20px;
+    background-color: antiquewhite;
+}
+
+div.parraf2 {
+    grid-area: parraf2;
+}
+
+.infr {
+    grid-area: infr;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.lunch {
+    grid-area: lunch;
+    margin-left: 50%;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/*css para pagina contacto*/
+
+div.paf1 {
+    grid-area: paf1;
+}
+
+form {
+    grid-area: form;
+}
+
+fieldset {
+    background-color: antiquewhite;
+    font-family: "roboto-Italic";
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+legend {
+    font-family: "roboto-BlackItalic";
+    font-size: 40px;
+    margin: 10px;
+    text-align: center;
+    color: chocolate;
+    background-color: antiquewhite;
+}
+
+label {
+    display: block;
+    padding: 5px;
+}
+
+.gender {
+    padding: 10px;
+}
+
+.txt {
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.medioc {
+    margin: 10px;
+}
+
+.enviar {
+    margin: 20px; 
+    transition: all 1s;
+    }
+
+.enviar:hover{
+background-image: linear-gradient(burlywood, gold);
+font-size: larger;
+}
+.reset {
+    margin: 20px;
+    transition: all 1s;
+}
+.reset:hover{
+    background-image: linear-gradient(burlywood, gold);
+font-size: larger;
+}
