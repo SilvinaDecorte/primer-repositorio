@@ -215,8 +215,8 @@ header {
 .caja0 {
     grid-area: caja0;
     display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 .caja3 {
@@ -302,8 +302,8 @@ h3 {
 p {
     font-family: "Roboto-BlackItalic";
     background-color: antiquewhite;
+    font: size 40%;
 }
-
 /*imagenes*/
 .panes {
     width: 25%;
@@ -312,7 +312,7 @@ p {
 }
 
 .frola {
-    width: 25%;
+    width: 17%;
     border-style: groove;
     border-width: 8px;
 }
