@@ -641,7 +641,7 @@ div.parraf2 {
     grid-area: parraf2;
 }
 
-.infr {
+.inframe {
     grid-area: infr;
     margin-right: 20px;
     margin-left: 40px;
@@ -669,8 +669,8 @@ form {
 fieldset {
     background-color: antiquewhite;
     font-family: "roboto-Italic";
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 legend {

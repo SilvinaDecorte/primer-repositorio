@@ -13,14 +13,15 @@
 </head>
 
 <body class="container-fluid">
-        <header class="mb-5">
+    <div class="row">
+        <header class="mb-5 col-md-12 col-sm-12 col-xl-12">
             <h1 class="display-3 text-center">
                 Desol Panificados
             </h1>
             <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-                <div class="">
+                <div class="container">
                     <a class="navbar-brand" href="../index.html">
-                        <img src="../img/ico-pan.png" alt="" width="60">
+                        <img src="../img/ico-pan.png" alt="icono-pan" width="60">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -50,6 +51,8 @@
                 </div>
             </nav>
         </header>
+
+    </div>
     <!--fin de header inicio de main-->
     <div class="row">
         <div class="col-sm-12 col-md-6 col-xl-6">
@@ -82,36 +85,37 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-12 col-md-12 col-xl-12">
-            <img class=" text-center mapa animate__animated animate__zoomIn img-thumbnail" src="../img/ubicacion.jpeg "
-                alt="mapa Ubicacion del local">
+        <div class="col-sm-12 col-md-6 col-xl-6">
+            <img class="img-thumbnail mapa" src="../img/ubicacion.jpeg " alt="mapa Ubicacion del local">
         </div>
         <!--inicio de tabla-->
-        <table class="col-sm-12 col-md-12 col-xl-12">
-            <caption class="text-center">Nuestros Horarios</caption>
-            <th>
-                <tr>
-                    <td>Dias</td>
-                    <td>Desde</td>
-                    <td>Hasta</td>
-                </tr>
-            </th>
-            <tbody>
-                <tr>
-                    <td>Lunes a Viernes</td>
-                    <td>07:30 hs</td>
-                    <td>20:00 hs</td>
-                </tr>
-                <tr>
-                    <td>Sabado y Domingo</td>
-                    <td>08:30 hs</td>
-                    <td>20:00 hs</td>
-                </tr>
-            </tbody>
-            <tfoot>
-            </tfoot>
-        </table>
-        <!--fin de tabla-->
+        <div class="col-sm-12 col-md-6 col-xl-6">
+            <table>
+                <caption class="lead">Nuestros Horarios</caption>
+                <th>
+                    <tr>
+                        <td>Dias</td>
+                        <td>Desde</td>
+                        <td>Hasta</td>
+                    </tr>
+                </th>
+                <tbody>
+                    <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>07:30 hs</td>
+                        <td>20:00 hs</td>
+                    </tr>
+                    <tr>
+                        <td>Sabado y Domingo</td>
+                        <td>08:30 hs</td>
+                        <td>20:00 hs</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                </tfoot>
+            </table>
+            <!--fin de tabla-->
+        </div>
     </div>
     <!--inicio de footer-->
     <div class="row">
@@ -126,7 +130,7 @@
                         </a></li>
                 </ul>
             </nav>
-            <span class="text-center text-muted">Idea de proyecto relizada por Silvina Decorte 2022</span>
+            <span class="text-center lead">Idea de proyecto relizada por Silvina Decorte 2022</span>
         </footer>
     </div>
     </div>
