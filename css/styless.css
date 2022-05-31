@@ -1,5 +1,5 @@
 * {
-    margin: 0, 5%;
+    margin: 0%;
 }
 
 /* fuentes descargadas a utilizar*/
@@ -296,13 +296,13 @@ font-size: larger;
 h2,
 h3 {
     font-family: "Roboto-BlackItalic";
-    font-size: 40px;
+    font-size: 2em;
 }
 
 p {
     font-family: "Roboto-BlackItalic";
     background-color: antiquewhite;
-    font: size 40%;
+    font: size 1em;
 }
 /*imagenes*/
 .panes {
@@ -425,7 +425,7 @@ table {
     width: 20rem;
     border-style: groove;
     border-width: 8px;
-    margin: 10px;
+    margin: 40px;
 }
 
 .elaboracion {
@@ -450,7 +450,7 @@ caption {
 
 table {
     width: 30%;
-    border: 3px solid chocolate;
+     border: 3px solid chocolate;
     margin: 3rem;
     border-collapse: collapse;
     font-size: 2rem;
@@ -477,8 +477,8 @@ div.box1 {
 div.box2 {
     grid-area: box2;
     display: flex;
-    justify-content: space-between;
-    margin: 20px;
+    justify-content: space-around;
+    margin: 30px;
 }
 
 div.caja10 {
@@ -490,31 +490,22 @@ div.caja12 {
     grid-area: caja12;
     display: flex;
     justify-content: stretch;
-    background-color: blanchedalmond;
-    border-style: double;
-    margin: 20px;
+    margin-left: 4em;
+    margin-right: 4em;
 }
 
 .chalita {
     width: 200px;
     height: 200px;
     border: #5e3b03 double;
-    margin: 5px;
+    margin-left: 9em;
 }
-
 
 .tortafrutal {
     width: 200px;
     height: 200px;
     border: #5e3b03 double;
-    margin: 5px;
-}
-
-.criollos {
-    width: 200px;
-    height: 200px;
-    border: #5e3b03 double;
-    margin: 5px;
+    margin-right: 13em;
 }
 
 .desayuno {
@@ -539,7 +530,9 @@ div.caja12 {
 }
 
 /*listas productos*/
-
+.listas{
+    margin: 3em;
+}
 .ipan {
     width: 80px;
     height: 80px;
@@ -553,11 +546,11 @@ div.caja12 {
 }
 
 .li1 {
-    display: list-item;
+    display:list-item ;
 }
 
 .li2 {
-    display: list-item;
+    display:list-item ;
 }
 
 .li3 {
@@ -586,7 +579,7 @@ div.caja12 {
 
 .ipastel {
     width: 30%;
-    margin: 0%;
+    margin: 1em;
     padding: 0%;
 }
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sucursales</title>
+    <title>Sucursal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styless.css">
@@ -14,8 +14,8 @@
 
 <body class="container-fluid">
     <div class="row">
-        <header class="mb-5 col-md-12 col-sm-12 col-xl-12">
-            <h1 class="display-3 text-center">
+        <header class="mb-5 col-md-12 col-sm-12  col-lg-12 col-xl-12">
+            <h1 class="display-3 text-center animate__animated animate__slideInRight">
                 Desol Panificados
             </h1>
             <nav class="navbar navbar-expand-lg navbar-light bg-warning">
@@ -31,31 +31,29 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                                <a class="nav-link ain" aria-current="page" href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./sucursales.html">Sucursal</a>
+                                <a class="nav-link asuc" href="./sucursal.html">Sucursal</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./productos.html">Productos</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="./promociones.html">Promociones</a>
+                                <a class="nav-link aprod" href="./productos.html">Productos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                                <a class="nav-link aprom" href="./promociones.html">Promociones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link acont" href="./contacto.html">Contacto</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
-
     </div>
-    <!--fin de header inicio de main-->
+    <!--fin header inicio main-->
     <div class="row">
-        <div class="col-sm-12 col-md-6 col-xl-6">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <h2>Sucursales Y Franquicias</h2>
             <p class="text-muted text-center">En el establecimiento, además de adquirir nuestros panes artesanos,
                 también disponemos de una gran
@@ -63,35 +61,61 @@
                 según
                 las necesidades del cliente especialmente las tartas en las que incluimos nombres, fotos, objetos de
                 chocolate y cualquier cosa que el cliente desee.Además, en todos ellos disponemos de servicio de
-                cafetería para poder probar y degustar nuestros productos in situ.</p>
+                cafetería para poder probar y degustar nuestros productos in situ.
+            </p>
         </div>
-        <!--imagenes-->
-        <div class="caja6 col-sm-12 col-md-6 col-xl-6">
-            <img class="local1" src="../img/local1.jpg " alt="imagen local">
+        <!--carrusell-->
+        <div class="text-center col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/bakery-793856_960_720.jpg" class="d-block w-100" alt="imagen-local">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/locale.jpg" class="d-block w-100" alt=" imagen-local">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/locales.jpg" class="d-block w-100" alt=" imagen-local">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
     </div>
     <div class="row">
-        <div class="caja7 animate__animated animate__zoomIn col-md-12 col-sm-12 col-xl-12 ">
-            <img class="local2 img-thumbnail img-fluid" src="../img/local2.jpg " alt="imagen local">
-            <img class="elaboracion img-thumbnail img-fluid" src="../img/images.jpg" alt="image-elaboracion">
-        </div>
-    </div>
-    <div class="row">
-        <div class="caja8 col-sm-12 col-md-12 col-xl-12">
-            <h3>DÓNDE ENCONTRARNOS</h3>
+        <div class="caja8 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h3 class="display-6">DÓNDE ENCONTRARNOS</h3>
             <p class="lead">Podes encontrarnos en nuestro local en la calle Ernesto Saavedra 4863 barrio San
                 Javier,Cuidad de Córdoba
-                Capital.</p>
+                Capital.
+            </p>
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-12 col-md-6 col-xl-6">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <img class="img-thumbnail mapa" src="../img/ubicacion.jpeg " alt="mapa Ubicacion del local">
         </div>
         <!--inicio de tabla-->
-        <div class="col-sm-12 col-md-6 col-xl-6">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 animate__animated animate__zoomIn tabla">
             <table>
-                <caption class="lead">Nuestros Horarios</caption>
+                <caption class="display-6">Nuestros Horarios</caption>
                 <th>
                     <tr>
                         <td>Dias</td>
@@ -114,13 +138,12 @@
                 <tfoot>
                 </tfoot>
             </table>
-            <!--fin de tabla-->
         </div>
     </div>
-    <!--inicio de footer-->
+    <!-- fin de tabla inicio de footer-->
     <div class="row">
         <footer class="col-sm-12 col-md-12 col-xl-12">
-            <img class="img-thumbnail logo" src="../img/logo.png" alt="imagen-logo">
+            <img class="img-thumbnail logo animate__animated animate__zoomIn" src="../img/logo.png" alt="imagen-logo">
             <nav>
                 <ul class="footer">
                     <li> <a href="https://www.facebook.com/De-sol-panificados-101041579004470">
@@ -133,7 +156,7 @@
             <span class="text-center lead">Idea de proyecto relizada por Silvina Decorte 2022</span>
         </footer>
     </div>
-    </div>
+<!--script js de bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
