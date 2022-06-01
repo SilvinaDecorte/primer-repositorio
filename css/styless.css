@@ -28,55 +28,6 @@
         "footer footer";
 }
 
-.cont2 {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 150px auto auto auto auto auto auto 240px;
-    grid-template-areas: "header header"
-        "caja5 caja5"
-        "caja6 caja6"
-        "caja7 caja7"
-        "caja8 caja8"
-        "caja9 caja9"
-        "table table"
-        "footer footer";
-}
-
-.cont3 {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 150px auto auto auto auto auto;
-    grid-template-areas: "header header"
-        "caja10 caja10"
-        "box1 box1"
-        "caja12 caja12"
-        "box2 box2"
-        "footer footer";
-}
-
-.cont4 {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 150px auto auto auto auto auto auto;
-    grid-template-areas: "header header"
-        "parraf1 parraf1"
-        "caja16 caja16"
-        "infr infr"
-        "parraf2 parraf2"
-        "lunch lunch"
-        "footer footer";
-}
-
-.contc {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 150px auto auto auto;
-    grid-template-areas: "header header"
-        "paf1 paf1"
-        "form form"
-        "footer footer";
-}
-
 /*MEDIA QUERIES */
 @media screen and (min-width:768px) {
     .cont1 {
@@ -89,52 +40,7 @@
             "caja4 caja3"
             "footer footer";
     }
-
-    .cont2 {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto auto auto auto auto 240px;
-        grid-template-areas: "header header"
-            "caja5 caja6"
-            "caja7 caja7"
-            "caja8 caja8"
-            "caja9 table"
-            "footer footer";
-    }
-
-    .cont3 {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto auto auto auto auto;
-        grid-template-areas: "header header"
-            "caja10 caja10"
-            "box1 box2"
-            "caja12 caja12"
-            "footer footer";
-    }
-
-    .cont4 {
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto auto auto auto auto auto;
-        grid-template-areas: "header header"
-            "parraf1 parraf1"
-            "infr caja16"
-            "parraf2 parraf2"
-            "lunch lunch"
-            "footer footer";
-    }
-
-    .contc {
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas: "header header"
-            "paf1 paf1"
-            "form form"
-            "footer footer";
-    }
 }
-
 
 @media screen and (min-width:1200px) {
     .cont1 {
@@ -145,50 +51,6 @@
             "caja0 caja0"
             "caja1 caja2"
             "caja4 caja3"
-            "footer footer";
-    }
-
-    .cont2 {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 160px auto auto auto auto 240px;
-        grid-template-areas: "header header"
-            "caja5 caja6"
-            "caja7 caja7"
-            "caja8 caja8"
-            "caja9 table"
-            "footer footer";
-    }
-
-    .cont3 {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto auto auto auto auto;
-        grid-template-areas: "header header"
-            "caja10 caja10"
-            "box1 box2"
-            "caja12 caja12"
-            "footer footer";
-    }
-
-    .cont4 {
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 160px auto auto auto auto auto;
-        grid-template-areas: "header header"
-            "parraf1 parraf1"
-            "infr caja16"
-            "parraf2 parraf2"
-            "lunch lunch"
-            "footer footer";
-    }
-
-    .contc {
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: 160px auto auto auto;
-        grid-template-areas: "header header"
-            "paf1 paf1"
-            "form form"
             "footer footer";
     }
 }
@@ -252,45 +114,55 @@ li {
     margin: 5px;
     font-size: 20px;
 }
+
 .nav1 a {
-    color:  black;
+    color: black;
     font-family: 'Lucida Sans',
 }
-.ain{
-    transition: all 1s;
-}
-.aprom{
-    transition: all 1s;
-}
-a.suc{
-    transition: all 1s;
-}
-.acont{
-    transition: all 1s;
-}
-aprod{
+
+.ain {
     transition: all 1s;
 }
 
-.aprom:hover{
-    background-image: linear-gradient(orange, rgb(241, 237, 232));
-font-size: larger;
+.aprom {
+    transition: all 1s;
 }
-.ain:hover{
-    background-image: linear-gradient(orange,rgb(238, 234, 228));
-font-size: larger;
+
+a.suc {
+    transition: all 1s;
 }
-.aprod:hover{
-    background-image: linear-gradient(orange, rgb(241, 237, 232));
-font-size: larger;
+
+.acont {
+    transition: all 1s;
 }
-.asuc:hover{
+
+aprod {
+    transition: all 1s;
+}
+
+.aprom:hover {
     background-image: linear-gradient(orange, rgb(241, 237, 232));
     font-size: larger;
 }
-.acont:hover{
+
+.ain:hover {
+    background-image: linear-gradient(orange, rgb(238, 234, 228));
+    font-size: larger;
+}
+
+.aprod:hover {
     background-image: linear-gradient(orange, rgb(241, 237, 232));
-font-size: larger;
+    font-size: larger;
+}
+
+.asuc:hover {
+    background-image: linear-gradient(orange, rgb(241, 237, 232));
+    font-size: larger;
+}
+
+.acont:hover {
+    background-image: linear-gradient(orange, rgb(241, 237, 232));
+    font-size: larger;
 }
 
 h2,
@@ -304,6 +176,7 @@ p {
     background-color: antiquewhite;
     font: size 1em;
 }
+
 /*imagenes*/
 .panes {
     width: 25%;
@@ -367,60 +240,12 @@ span {
 }
 
 /*pagina sucursales*/
-
-.caja5 {
-    grid-area: caja5;
-}
-
-.caja6 {
-    grid-area: caja6;
-    display: flex;
-    justify-content: center;
-}
-
-.caja7 {
-    grid-area: caja7;
-    display: flex;
-    justify-content: space-around;
-    border-style: groove;
-    border-width: 8px;
-    margin: 10px;
-    background-color: burlywood;
-}
-
-.caja8 {
-    grid-area: caja8;
-}
-
-.caja9 {
-    grid-area: caja9;
-    margin-left: 4rem;
-}
-
 table {
     grid-area: table;
     background-color: burlywood;
 }
 
 /*CSS IMAGENES*/
-.local2 {
-    width: 35%;
-    height: auto;
-    margin: 40px;
-    border-style: groove;
-    border-width: 8px;
-    margin: 10px;
-}
-
-.local1 {
-    width: 80%;
-    height: auto;
-    margin: 40px;
-    border-style: groove;
-    border-width: 8px;
-    margin: 10px;
-}
-
 .mapa {
     width: 20rem;
     border-style: groove;
@@ -450,7 +275,7 @@ caption {
 
 table {
     width: 30%;
-     border: 3px solid chocolate;
+    border: 3px solid chocolate;
     margin: 3rem;
     border-collapse: collapse;
     font-size: 2rem;
@@ -467,40 +292,12 @@ td {
 
 /*pagina productos APLICANDO css*/
 
-div.box1 {
-    grid-area: box1;
-    display: flex;
-    justify-content: space-around;
-    margin: 20px;
+div .boxx{
+    margin-top: 20px;
 }
-
-div.box2 {
-    grid-area: box2;
-    display: flex;
-    justify-content: space-around;
-    margin: 30px;
-}
-
-div.caja10 {
-    grid-area: caja10;
-    margin: 20px;
-}
-
-div.caja12 {
-    grid-area: caja12;
-    display: flex;
-    justify-content: stretch;
-    margin-left: 4em;
-    margin-right: 4em;
-}
-
-.chalita {
-    width: 200px;
-    height: 200px;
-    border: #5e3b03 double;
-    margin-left: 9em;
-}
-
+ div .carru{
+     margin-top: 30px;
+ }
 .tortafrutal {
     width: 200px;
     height: 200px;
@@ -508,31 +305,11 @@ div.caja12 {
     margin-right: 13em;
 }
 
-.desayuno {
-    width: 200px;
-    height: 200px;
-    border: #5e3b03 double;
-    margin: 5px;
-}
-
-.torta1 {
-    width: 200px;
-    height: 200px;
-    border: #5e3b03 double;
-    margin: 5px;
-}
-
-.cañon {
-    width: 200px;
-    height: 200px;
-    border: #5e3b03 double;
-    margin: 5px;
-}
-
 /*listas productos*/
-.listas{
+.listas {
     margin: 3em;
 }
+
 .ipan {
     width: 80px;
     height: 80px;
@@ -546,11 +323,11 @@ div.caja12 {
 }
 
 .li1 {
-    display:list-item ;
+    display: list-item;
 }
 
 .li2 {
-    display:list-item ;
+    display: list-item;
 }
 
 .li3 {
@@ -618,22 +395,6 @@ div.caja12 {
     margin: 10px;
 }
 
-div.caja16 {
-    grid-area: caja16;
-    display: flex;
-    justify-content: center;
-}
-
-div.parraf1 {
-    grid-area: parraf1;
-    margin: 20px;
-    background-color: antiquewhite;
-}
-
-div.parraf2 {
-    grid-area: parraf2;
-}
-
 .inframe {
     grid-area: infr;
     margin-right: 20px;
@@ -650,10 +411,6 @@ footer {
 }
 
 /*css para pagina contacto*/
-
-div.paf1 {
-    grid-area: paf1;
-}
 
 form {
     grid-area: form;
@@ -694,19 +451,21 @@ label {
 }
 
 .enviar {
-    margin: 20px; 
+    margin: 20px;
     transition: all 1s;
-    }
-
-.enviar:hover{
-background-image: linear-gradient(burlywood, gold);
-font-size: larger;
 }
+
+.enviar:hover {
+    background-image: linear-gradient(burlywood, gold);
+    font-size: larger;
+}
+
 .reset {
     margin: 20px;
     transition: all 1s;
 }
-.reset:hover{
+
+.reset:hover {
     background-image: linear-gradient(burlywood, gold);
-font-size: larger;
+    font-size: larger;
 }
