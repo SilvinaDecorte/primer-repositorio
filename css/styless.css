@@ -20,11 +20,11 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: 150px auto auto auto auto auto 240px;
     grid-template-areas: "header header"
-        "caja0 caja0"
         "caja1 caja1"
         "caja2 caja2"
         "caja3 caja3"
         "caja4 caja4"
+        "caja0 caja0"
         "footer footer";
 }
 
@@ -46,7 +46,7 @@
     .cont1 {
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 10rem auto auto auto 15rem;
+        grid-template-rows: 11rem auto auto auto 15rem;
         grid-template-areas: "header header"
             "caja0 caja0"
             "caja1 caja2"
@@ -136,7 +136,7 @@ a.suc {
     transition: all 1s;
 }
 
-aprod {
+.aprod {
     transition: all 1s;
 }
 
@@ -292,12 +292,14 @@ td {
 
 /*pagina productos APLICANDO css*/
 
-div .boxx{
+div .boxx {
     margin-top: 20px;
 }
- div .carru{
-     margin-top: 30px;
- }
+
+div .carru {
+    margin-top: 30px;
+}
+
 .tortafrutal {
     width: 200px;
     height: 200px;
@@ -391,7 +393,7 @@ div .boxx{
 /*pagina promociones*/
 
 .promo {
-    width: 50%;
+    width: 58%;
     margin: 10px;
 }
 
@@ -399,6 +401,7 @@ div .boxx{
     grid-area: infr;
     margin-right: 20px;
     margin-left: 40px;
+    margin-top: 10px;
 }
 
 .lunch {
@@ -419,8 +422,7 @@ form {
 fieldset {
     background-color: antiquewhite;
     font-family: "roboto-Italic";
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 20px;
 }
 
 legend {
