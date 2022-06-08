@@ -1,0 +1,344 @@
+@import 'variables';
+
+* {
+    margin: 0%;
+    padding: 0%;
+
+}
+
+/* fuentes descargadas a utilizar*/
+@font-face {
+    font-family: "Roboto-BlackItalic";
+    src: url(../fonts/Roboto-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Italic";
+    src: url(../fonts/Roboto-Italic.ttf)
+}
+
+/*grillaS*/
+.cont1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas: "header header"
+        "caja1 caja1"
+        "caja2 caja2"
+        "caja3 caja3"
+        "caja4 caja4"
+        "caja0 caja0"
+        "footer footer";
+}
+
+/*MEDIA QUERIES */
+@media screen and (min-width:768px) {
+    .cont1 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "header header"
+            "caja0 caja0"
+            "caja1 caja2"
+            "caja4 caja3"
+            "footer footer";
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .cont1 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "header header"
+            "caja0 caja0"
+            "caja1 caja2"
+            "caja4 caja3"
+            "footer footer";
+    }
+}
+
+header {
+    grid-area: header;
+}
+
+.caja1 {
+    grid-area: caja1;
+    margin: 10px;
+}
+
+.caja2 {
+    grid-area: caja2;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.caja0 {
+    grid-area: caja0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.caja3 {
+    grid-area: caja3;
+}
+
+.caja4 {
+    grid-area: caja4;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/*css body INDEX y elementos*/
+body {
+    background-image: url(../img/body.jpg );
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100vh;
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    background-image: $color-fot;
+    border-bottom: $border-2;
+    margin: 0%;
+}
+
+nav {
+    li {
+        justify-content: end;
+        display: inline-block;
+        margin: 5px;
+        font-size: $size-a-ft;
+    }
+
+    a {
+        color: $color-tex;
+        font-family: $font-1;
+    }
+}
+
+a {
+    .ain .aprod .asuc .aprom .acont {
+        transition: all 1s;
+    }
+
+    &:hover {
+        background-image: $color-hov;
+        font-size: larger;
+    }
+}
+
+h2,
+h3 {
+    font-family: $font-1;
+    font-size: 3em;
+}
+
+p {
+    font-family: $font-2;
+    background-color: $color-back2;
+    font-size: 2%;
+}
+
+/*imagenes*/
+.panes {
+    width: 25%;
+    border-style: groove;
+    border-width: 8px;
+}
+
+.frola {
+    width: 17%;
+    border-style: groove;
+    border-width: 8px;
+}
+
+.tortaf {
+    width: 25%;
+    border-style: groove;
+    border-width: 8px;
+}
+
+.img2 {
+    width: 30rem;
+    border-style: groove;
+    border-width: 8px;
+    margin: 10px;
+}
+
+.img3 {
+    width: 30rem;
+    border-style: groove;
+    border-width: 8px;
+    margin: $size-a-ft
+}
+
+.logo {
+    width: 8rem;
+    margin-left: 10px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    background-image: $color-fot;
+    border-top: $border-2;
+}
+
+.face {
+    width: 3rem;
+}
+
+.mail {
+    width: 3rem;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+/*pagina sucursales*/
+table {
+    background-color: $color-back1;
+}
+
+/*CSS IMAGENES*/
+.mapa {
+    width: 45%;
+    border-style: groove;
+    border-width: 8px;
+    margin: $size-2;
+}
+
+.elaboracion {
+    width: 35%;
+    height: auto;
+    margin: $size-2;
+    border-style: groove;
+    border-width: 8px;
+    margin: 10px;
+}
+
+/*aplicando css a tabla*/
+caption {
+    text-align: center;
+    font-family: $font-2;
+    font-size: 1rem;
+    caption-side: top;
+    background-color: $color-back1;
+}
+
+table {
+    width: 20%;
+    border: $border-1;
+    margin: $size-2;
+    border-collapse: collapse;
+    font-size: 2rem;
+}
+
+th,
+tfoot,
+td {
+    width: 40%;
+    border: $border-1;
+}
+/*pagina productos APLICANDO css*/
+div .boxx {
+    margin-top: $size-a-ft;
+}
+
+div .carru {
+    margin-top: $size-2;
+    margin-bottom: $size-2;
+}
+
+/*listas productos*/
+ul {
+    li {
+        display: list-item;
+    }
+}
+
+.ipan {
+    width: 80px;
+    height: 80px;
+    margin: 2%;
+}
+
+.ipastel {
+    width: 30%;
+    margin: 1em;
+    padding: 0%
+}
+
+.ibombom {
+    width: 30%;
+}
+
+/*pagina promociones*/
+
+.promo {
+    width: 58%;
+    margin: 10px;
+}
+
+/*css para pagina contacto*/
+.maincontacto {
+    background-image: url(../img/produc.jpg);
+    margin: 0%;
+}
+
+fieldset {
+    background-color: $color-back2;
+    font-family: $font-2;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+}
+
+legend {
+    font-family: $font-1;
+    font-size: 2rem;
+    text-align: center;
+    color: $color-tex2;
+    background-color: $color-back2;
+}
+
+label {
+    display: block;
+    padding: 5px;
+}
+
+.gender {
+    padding: 10px;
+}
+
+.txt {
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.medioc {
+    margin: 10px;
+}
+
+input {
+    .enviar .reset {
+        margin: 20px;
+        transition: all 1s;
+    }
+
+    &:hover {
+        background-image: $color-btn;
+        font-size: larger;
+    }
+}
