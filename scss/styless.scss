@@ -3,7 +3,7 @@
 * {
     margin: 0%;
     padding: 0%;
-
+    box-sizing: border-box;
 }
 
 /* fuentes descargadas a utilizar*/
@@ -100,9 +100,8 @@ body {
     background-image: url(../img/body.jpg );
     background-repeat: no-repeat;
     background-size: cover;
-    min-width: 100vh;
+    min-height: 100vh;
     margin: 0%;
-    padding: 0%;
 }
 
 header {
@@ -136,16 +135,19 @@ a {
     }
 }
 
-h2,
-h3 {
-    font-family: $font-1;
-    font-size: 3em;
-}
+div {
 
-p {
-    font-family: $font-2;
-    background-color: $color-back2;
-    font-size: 2%;
+    h2,
+    h3 {
+        font-family: $font-1;
+        font-size: 3rem;
+    }
+
+    p {
+        font-family: $font-2;
+        background-color: $color-back2;
+        font-size: 2%;
+    }
 }
 
 /*imagenes*/
@@ -251,6 +253,7 @@ td {
     width: 40%;
     border: $border-1;
 }
+
 /*pagina productos APLICANDO css*/
 div .boxx {
     margin-top: $size-a-ft;
@@ -259,6 +262,10 @@ div .boxx {
 div .carru {
     margin-top: $size-2;
     margin-bottom: $size-2;
+}
+
+.lunch {
+    margin-left: 50%;
 }
 
 /*listas productos*/
@@ -285,7 +292,6 @@ ul {
 }
 
 /*pagina promociones*/
-
 .promo {
     width: 58%;
     margin: 10px;
