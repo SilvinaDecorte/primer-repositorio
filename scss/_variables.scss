@@ -3,14 +3,24 @@ $color-nav:linear-gradient(#ffa500, rgb(241, 237, 232));
 $color-fot:linear-gradient(25deg, brown, gold, orange, burlywood);
 $color-hov:linear-gradient(orange, rgb(238, 234, 228));
 $color-tex:black;
-$color-tex2:chocolate;
-$color-back1:burlywood;
-$color-back2:antiquewhite;
+
+/*mapa de color*/
+$color:(text-1:chocolate,primary:burlywood,secundary:antiquewhite);
 $color-btn:linear-gradient(burlywood, gold);
 
+/*breakpoint*/
+$desktop:768px;
+$xxl:1200px;
+
 /*tamaños*/
-$size-a-ft: 1rem;
-$size-2: 2rem;
+$size-a-ft: 1em;
+$size-2: 2em;
+$size-3:6em;
+$radius:15px;
+$padding:15px;
+
+//sombreado
+$shadow:0 10px 30px rgba(0, 0, 0, .4);
 
 
 /*fuentes*/
@@ -18,4 +28,4 @@ $font-1:"Roboto-BlackItalic";
 $font-2:"Roboto-Italic";
 
 $border-1:3px solid chocolate;
-$border-2:dotted 8px rgb(145, 55, 55)
+$border-2:dotted 8px rgb(145, 55, 55);

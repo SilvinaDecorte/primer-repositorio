@@ -1,11 +1,15 @@
 @import 'variables';
+@import 'mixins';
+
+@function color($color-name) {
+    @return map-get($color, $color-name);
+}
 
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
-
 /* fuentes descargadas a utilizar*/
 @font-face {
     font-family: "Roboto-BlackItalic";
@@ -17,6 +21,99 @@
     src: url(../fonts/Roboto-Italic.ttf)
 }
 
+/*pagina Bienvenidos*/
+
+.bienv {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    background-image: url(../img/medialunas.webp);
+    position: center;
+    size: cover;
+}
+
+.bg {
+    background-color: color(secundary);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    clip-path: popolygon(76% 0, 0 0, 0 100%);
+
+    @include desktop {
+        clip-path: polygon(0 0, 65% 0, 35% 100%, 0% 100%);
+    }
+
+    @include xxl {
+        clip-path: polygon(0 0, 65% 0, 35% 100%, 0% 100%);
+
+    }
+}
+
+.primary {
+    grid-area: primary;
+    padding: $padding;
+
+    @include desktop {
+        text-align: left;
+        margin: 4em 0 0 4em;
+        color: $color-tex;
+    }
+
+    @include xxl {
+        text-align: left;
+        margin: 4em 0 0 4em;
+        color: $color-tex
+    }
+
+    h1 {
+        font: {
+            family: cursiva;
+            size: 3em;
+        }
+
+        @include desktop {
+            font-size: $size-3
+        }
+
+        @include xxl {
+            font-size: $size-3;
+        }
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    a {
+        background-color: color(primary);
+        color: $color-tex;
+        border-radius: $radius;
+        box-shadow: $shadow;
+        padding: $padding;
+        display: block;
+        font-weight: bold;
+        size: 1em;
+
+        text: {
+            decoration: none;
+            transform: uppercase;
+            align: center;
+        }
+
+        @include desktop {
+            display: inline-block;
+            size: 4em;
+        }
+        @include xxl{
+            display: inline-block;
+            size: 4em;
+        }
+    }
+
+}
+
+/*css page nosotros y elementos*/
 /*grillaS*/
 .cont1 {
     display: grid;
@@ -29,12 +126,8 @@
         "caja4 caja4"
         "caja0 caja0"
         "footer footer";
-}
 
-/*MEDIA QUERIES */
-@media screen and (min-width:768px) {
-    .cont1 {
-        display: grid;
+    @include desktop {
         grid-template-columns: 50% 50%;
         grid-template-rows: auto auto auto auto auto;
         grid-template-areas: "header header"
@@ -43,11 +136,8 @@
             "caja4 caja3"
             "footer footer";
     }
-}
 
-@media screen and (min-width:1200px) {
-    .cont1 {
-        display: grid;
+    @include xxl {
         grid-template-columns: 50% 50%;
         grid-template-rows: auto auto auto auto auto;
         grid-template-areas: "header header"
@@ -56,72 +146,88 @@
             "caja4 caja3"
             "footer footer";
     }
+
+    header {
+        grid-area: header;
+    }
+
+    .caja1 {
+        grid-area: caja1;
+        margin: 10px;
+    }
+
+    .caja2 {
+        grid-area: caja2;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .caja0 {
+        grid-area: caja0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .caja3 {
+        grid-area: caja3;
+    }
+
+    .caja4 {
+        grid-area: caja4;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        grid-area: footer;
+    }
 }
 
-header {
-    grid-area: header;
-}
-
-.caja1 {
-    grid-area: caja1;
-    margin: 10px;
-}
-
-.caja2 {
-    grid-area: caja2;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-.caja0 {
-    grid-area: caja0;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.caja3 {
-    grid-area: caja3;
-}
-
-.caja4 {
-    grid-area: caja4;
-    display: flex;
-    justify-content: center;
-}
-
-footer {
-    grid-area: footer;
-}
-
-/*css body INDEX y elementos*/
 body {
     background-image: url(../img/body.jpg );
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
     margin: 0%;
-}
+    height: 100%;
+    h1 {
+        font: {
+            family: cursiva;
+            size: 4em;
+        }
 
-header {
-    background-image: $color-fot;
-    border-bottom: $border-2;
-    margin: 0%;
-}
+        @include desktop {
+            font-size: $size-3
+        }
 
-nav {
-    li {
-        justify-content: end;
-        display: inline-block;
-        margin: 5px;
-        font-size: $size-a-ft;
+        @include xxl {
+            font-size: $size-3;
+        }
     }
 
-    a {
-        color: $color-tex;
-        font-family: $font-1;
+    header {
+        background-image: $color-fot;
+        border-bottom: $border-2;
+        margin: 0%;
     }
+
+    nav {
+        margin: 0%;
+        padding: 0%;
+        li {
+            justify-content: end;
+            display: inline-block;
+            font-size: $size-a-ft;
+        }
+
+        a {
+            color: $color-tex;
+            font-family: $font-1;
+            size: 1em;
+        }
+    }
+
 }
 
 a {
@@ -140,12 +246,12 @@ div {
     h2,
     h3 {
         font-family: $font-1;
-        font-size: 3rem;
+        font-size: 3em;
     }
 
     p {
         font-family: $font-2;
-        background-color: $color-back2;
+        background-color: color(secundary);
         font-size: 2%;
     }
 }
@@ -154,6 +260,7 @@ div {
 .panes {
     width: 25%;
     border-style: groove;
+    border-radius: 50%;
     border-width: 8px;
 }
 
@@ -164,8 +271,9 @@ div {
 }
 
 .tortaf {
-    width: 25%;
+    width: 30%;
     border-style: groove;
+    border-radius: 50%;
     border-width: 8px;
 }
 
@@ -199,18 +307,18 @@ footer {
 }
 
 .face {
-    width: 3rem;
+    width: 3em;
 }
 
 .mail {
-    width: 3rem;
+    width: 3em;
     margin-left: 20px;
     margin-right: 40px;
 }
 
 /*pagina sucursales*/
 table {
-    background-color: $color-back1;
+    background-color: color(primary);
 }
 
 /*CSS IMAGENES*/
@@ -234,9 +342,9 @@ table {
 caption {
     text-align: center;
     font-family: $font-2;
-    font-size: 1rem;
+    font-size: 1em;
     caption-side: top;
-    background-color: $color-back1;
+    background-color: color(primary);
 }
 
 table {
@@ -244,7 +352,7 @@ table {
     border: $border-1;
     margin: $size-2;
     border-collapse: collapse;
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 th,
@@ -304,7 +412,7 @@ ul {
 }
 
 fieldset {
-    background-color: $color-back2;
+    background-color: color(secundary);
     font-family: $font-2;
     margin-left: 20%;
     margin-right: 20%;
@@ -313,10 +421,10 @@ fieldset {
 
 legend {
     font-family: $font-1;
-    font-size: 2rem;
+    font-size: 2em;
     text-align: center;
-    color: $color-tex2;
-    background-color: $color-back2;
+    color: color(text1);
+    background-color: color(secundary);
 }
 
 label {
