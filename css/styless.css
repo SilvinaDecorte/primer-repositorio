@@ -97,7 +97,7 @@
           size: 4em; } }
 
 /*css page nosotros y elementos*/
-/*grillaS*/
+/*grilla*/
 .cont1 {
   display: grid;
   grid-template-columns: 50% 50%;
