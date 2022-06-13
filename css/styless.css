@@ -23,73 +23,78 @@
   font-family: "Roboto-Italic";
   src: url(../fonts/Roboto-Italic.ttf); }
 
-/*pagina Bienvenidos*/
-.bienv {
-  height: 100%;
-  width: 100%;
-  margin: 0%;
-  background-image: url(../img/medialunas.webp);
-  position: center;
-  size: cover; }
-
-.bg {
-  background-color: antiquewhite;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-  clip-path: popolygon(76% 0, 0 0, 0 100%); }
-  @media (min-width: 768px) {
-    .bg {
-      clip-path: polygon(0 0, 65% 0, 35% 100%, 0% 100%); } }
-  @media (min-width: 1200px) {
-    .bg {
-      clip-path: polygon(0 0, 65% 0, 35% 100%, 0% 100%); } }
-
-.primary {
-  grid-area: primary;
-  padding: 15px; }
-  @media (min-width: 768px) {
-    .primary {
-      text-align: left;
-      margin: 4em 0 0 4em;
-      color: black; } }
-  @media (min-width: 1200px) {
-    .primary {
-      text-align: left;
-      margin: 4em 0 0 4em;
-      color: black; } }
-  .primary h1 {
-    font-family: cursiva;
-    font-size: 3em; }
+/*pagina Bienvenidos index*/
+.index {
+  height: 100vh;
+  width: 100vw; }
+  .index .bienv {
+    height: 100vh;
+    width: 100vw;
+    margin: 0%;
+    padding: 0%;
+    background-image: url(../img/medialunas.webp);
+    position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .index .bg {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    z-index: -1;
+    clip-path: polygon(0 0, 35% 0, 65% 100%, 0 100%); }
     @media (min-width: 768px) {
-      .primary h1 {
-        font-size: 6em; } }
+      .index .bg {
+        clip-path: polygon(0 0, 65% 0, 35% 100%, 0% 100%); } }
     @media (min-width: 1200px) {
-      .primary h1 {
-        font-size: 6em; } }
-  .primary p {
-    font-size: 1em; }
-  .primary a {
-    background-color: burlywood;
-    color: black;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-    padding: 15px;
-    display: block;
-    font-weight: bold;
-    size: 1em;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center; }
+      .index .bg {
+        clip-path: polygon(0 0, 65% 0, 35% 100%, 0% 100%); } }
+  .index .primary {
+    grid-area: primary;
+    padding: 15px; }
     @media (min-width: 768px) {
-      .primary a {
-        display: inline-block;
-        size: 4em; } }
+      .index .primary {
+        text-align: left;
+        margin: 4em 0 0 4em;
+        color: black; } }
     @media (min-width: 1200px) {
-      .primary a {
-        display: inline-block;
-        size: 4em; } }
+      .index .primary {
+        text-align: left;
+        margin: 4em 0 0 4em;
+        color: black; } }
+    .index .primary h1 {
+      font-family: cursiva;
+      font-size: 3em; }
+      @media (min-width: 768px) {
+        .index .primary h1 {
+          font-size: 6em; } }
+      @media (min-width: 1200px) {
+        .index .primary h1 {
+          font-size: 6em; } }
+    .index .primary p {
+      font-size: 1em; }
+    .index .primary a {
+      background-color: burlywood;
+      color: black;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      padding: 15px;
+      display: block;
+      font-weight: bold;
+      size: 1em;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center; }
+      @media (min-width: 768px) {
+        .index .primary a {
+          display: inline-block;
+          size: 4em; } }
+      @media (min-width: 1200px) {
+        .index .primary a {
+          display: inline-block;
+          size: 4em; } }
 
 /*css page nosotros y elementos*/
 /*grillaS*/
@@ -108,7 +113,7 @@
       grid-template-columns: 50% 50%;
       grid-template-rows: auto auto auto auto auto;
       grid-template-areas: "header header" "caja0 caja0" "caja1 caja2" "caja4 caja3" "footer footer"; } }
-  .cont1 header {
+  .cont1 header, .cont1 footer {
     grid-area: header; }
   .cont1 .caja1 {
     grid-area: caja1;
@@ -132,11 +137,14 @@
   .cont1 footer {
     grid-area: footer; }
 
+html {
+  height: 100vh; }
+
 body {
-  background-image: url(../img/body.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: tan;
   margin: 0%;
+  padding: 0%;
+  width: 100vw;
   height: 100%; }
   body h1 {
     font-family: cursiva;
@@ -147,7 +155,7 @@ body {
     @media (min-width: 1200px) {
       body h1 {
         font-size: 6em; } }
-  body header {
+  body header, body footer {
     background-image: linear-gradient(25deg, brown, gold, orange, burlywood);
     border-bottom: dotted 8px #913737;
     margin: 0%; }
@@ -220,7 +228,6 @@ div p {
 /*footer*/
 footer {
   text-align: center;
-  background-image: linear-gradient(25deg, brown, gold, orange, burlywood);
   border-top: dotted 8px #913737; }
 
 .face {
@@ -301,8 +308,7 @@ ul li {
 
 /*pagina promociones*/
 .promo {
-  width: 58%;
-  margin: 10px; }
+  width: 58%; }
 
 /*css para pagina contacto*/
 .maincontacto {

@@ -10,6 +10,7 @@
     padding: 0%;
     box-sizing: border-box;
 }
+
 /* fuentes descargadas a utilizar*/
 @font-face {
     font-family: "Roboto-BlackItalic";
@@ -21,96 +22,105 @@
     src: url(../fonts/Roboto-Italic.ttf)
 }
 
-/*pagina Bienvenidos*/
+/*pagina Bienvenidos index*/
+.index {
+    height: 100vh;
+    width: 100vw;
 
-.bienv {
-    height: 100%;
-    width: 100%;
-    margin: 0%;
-    background-image: url(../img/medialunas.webp);
-    position: center;
-    size: cover;
-}
-
-.bg {
-    background-color: color(secundary);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-    clip-path: popolygon(76% 0, 0 0, 0 100%);
-
-    @include desktop {
-        clip-path: polygon(0 0, 65% 0, 35% 100%, 0% 100%);
+    .bienv {
+        height: 100vh;
+        width: 100vw;
+        margin: 0%;
+        padding: 0%;
+        background-image: url(../img/medialunas.webp);
+        position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
-    @include xxl {
-        clip-path: polygon(0 0, 65% 0, 35% 100%, 0% 100%);
-
-    }
-}
-
-.primary {
-    grid-area: primary;
-    padding: $padding;
-
-    @include desktop {
-        text-align: left;
-        margin: 4em 0 0 4em;
-        color: $color-tex;
-    }
-
-    @include xxl {
-        text-align: left;
-        margin: 4em 0 0 4em;
-        color: $color-tex
-    }
-
-    h1 {
-        font: {
-            family: cursiva;
-            size: 3em;
-        }
+    .bg {
+        background-color: color(secundary);
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        padding: 0%;
+        position: absolute;
+        z-index: -1;
+        clip-path: polygon(0 0, 35% 0, 65% 100%, 0 100%);
 
         @include desktop {
-            font-size: $size-3
+            clip-path: polygon(0 0, 65% 0, 35% 100%, 0% 100%);
         }
 
         @include xxl {
-            font-size: $size-3;
+            clip-path: polygon(0 0, 65% 0, 35% 100%, 0% 100%);
+
         }
     }
 
-    p {
-        font-size: 1em;
-    }
-
-    a {
-        background-color: color(primary);
-        color: $color-tex;
-        border-radius: $radius;
-        box-shadow: $shadow;
+    .primary {
+        grid-area: primary;
         padding: $padding;
-        display: block;
-        font-weight: bold;
-        size: 1em;
-
-        text: {
-            decoration: none;
-            transform: uppercase;
-            align: center;
-        }
 
         @include desktop {
-            display: inline-block;
-            size: 4em;
+            text-align: left;
+            margin: 4em 0 0 4em;
+            color: $color-tex;
         }
-        @include xxl{
-            display: inline-block;
-            size: 4em;
-        }
-    }
 
+        @include xxl {
+            text-align: left;
+            margin: 4em 0 0 4em;
+            color: $color-tex
+        }
+
+        h1 {
+            font: {
+                family: cursiva;
+                size: 3em;
+            }
+
+            @include desktop {
+                font-size: $size-3
+            }
+
+            @include xxl {
+                font-size: $size-3;
+            }
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        a {
+            background-color: color(primary);
+            color: $color-tex;
+            border-radius: $radius;
+            box-shadow: $shadow;
+            padding: $padding;
+            display: block;
+            font-weight: bold;
+            size: 1em;
+
+            text: {
+                decoration: none;
+                transform: uppercase;
+                align: center;
+            }
+
+            @include desktop {
+                display: inline-block;
+                size: 4em;
+            }
+
+            @include xxl {
+                display: inline-block;
+                size: 4em;
+            }
+        }
+
+    }
 }
 
 /*css page nosotros y elementos*/
@@ -185,12 +195,17 @@
     }
 }
 
+html {
+    height: 100vh;
+}
+
 body {
-    background-image: url(../img/body.jpg );
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: tan;
     margin: 0%;
+    padding: 0%;
+    width: 100vw;
     height: 100%;
+
     h1 {
         font: {
             family: cursiva;
@@ -215,6 +230,7 @@ body {
     nav {
         margin: 0%;
         padding: 0%;
+
         li {
             justify-content: end;
             display: inline-block;
@@ -301,8 +317,8 @@ div {
 
 /*footer*/
 footer {
+    @extend header;
     text-align: center;
-    background-image: $color-fot;
     border-top: $border-2;
 }
 
@@ -402,7 +418,6 @@ ul {
 /*pagina promociones*/
 .promo {
     width: 58%;
-    margin: 10px;
 }
 
 /*css para pagina contacto*/

@@ -3,10 +3,13 @@ $color-nav:linear-gradient(#ffa500, rgb(241, 237, 232));
 $color-fot:linear-gradient(25deg, brown, gold, orange, burlywood);
 $color-hov:linear-gradient(orange, rgb(238, 234, 228));
 $color-tex:black;
+$color-btn:linear-gradient(burlywood, gold);
+
 
 /*mapa de color*/
 $color:(text-1:chocolate,primary:burlywood,secundary:antiquewhite);
-$color-btn:linear-gradient(burlywood, gold);
+
+
 
 /*breakpoint*/
 $desktop:768px;
