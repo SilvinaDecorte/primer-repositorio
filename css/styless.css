@@ -137,15 +137,12 @@
   .cont1 footer {
     grid-area: footer; }
 
-html {
-  height: 100vh; }
-
 body {
   background-color: #debd81;
+  width: 100%;
+  height: 100%;
   margin: 0%;
-  padding: 0%;
-  width: 100vw;
-  height: 100%; }
+  padding: 0%; }
   body h1 {
     font-family: cursiva;
     font-size: 4em; }
@@ -189,22 +186,22 @@ div p {
   font-size: 1em; }
 
 /*imagenes*/
-div .panes {
-  width: 25%;
-  border-style: groove;
-  border-radius: 50%;
-  border-width: 8px; }
-
-div .frola {
-  width: 17%;
-  border-style: groove;
-  border-width: 8px; }
-
-div .tortaf {
-  width: 25%;
-  border-style: groove;
-  border-radius: 50%;
-  border-width: 8px; }
+div {
+  margin: 0%; }
+  div .panes {
+    width: 20%;
+    border-style: groove;
+    border-radius: 50%;
+    border-width: 8px; }
+  div .frola {
+    width: 17%;
+    border-style: groove;
+    border-width: 8px; }
+  div .tortaf {
+    width: 20%;
+    border-style: groove;
+    border-radius: 50%;
+    border-width: 8px; }
 
 .img2 {
   width: 30rem;
@@ -272,7 +269,7 @@ div .carru {
 
 /*listas productos*/
 .listas {
-  margin-bottom: 2em; }
+  margin-bottom: 1em; }
   .listas ul li {
     display: list-item; }
 
@@ -299,6 +296,19 @@ div .carru {
 .inframe {
   border-style: groove;
   border-width: 8px; }
+
+.tarj {
+  display: flex;
+  justify-content: space-around; }
+  .tarj section {
+    margin: 5px;
+    width: 18em; }
+    @media (min-width: 768px) {
+      .tarj section {
+        margin-left: 1em; } }
+    @media (min-width: 1200px) {
+      .tarj section {
+        margin-left: 1em; } }
 
 /*css para pagina contacto*/
 .maincontacto {
