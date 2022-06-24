@@ -67,9 +67,9 @@
         margin: 4em 0 0 4em;
         color: black; } }
     .index .primary h1 {
+      text-shadow: 2px 2px white;
       font-family: cursiva;
-      font-size: 3em;
-      font-text-shadow: 2px 2px grey; }
+      font-size: 3em; }
       @media (min-width: 768px) {
         .index .primary h1 {
           font-size: 6em; } }
