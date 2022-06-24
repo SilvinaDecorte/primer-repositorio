@@ -1,7 +1,8 @@
 @charset "UTF-8";
 * {
-  margin: 0%; }
+  box-sizing: border-box; }
 
+/*import variables y mixins*/
 /*colores*/
 /*mapa de color*/
 /*breakpoint*/
@@ -12,6 +13,7 @@
 /*breakpoint*/
 /*tamaños*/
 /*fuentes*/
+/*mapa*/
 /* fuentes descargadas a utilizar*/
 @font-face {
   font-family: "Roboto-BlackItalic";
@@ -27,24 +29,30 @@
   margin: 0%; }
   .index .bienv {
     height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
     background-image: url(../img/medialunas.webp);
-    position: center;
     background-repeat: no-repeat;
     background-size: cover; }
-  .index .bg {
-    background-color: antiquewhite;
-    width: 100%;
-    height: 100%;
-    margin: 0%;
-    position: absolute;
-    z-index: -1;
-    clip-path: polygon(0 0, 35% 0, 65% 100%, 0 100%); }
-    @media (min-width: 768px) {
-      .index .bg {
-        clip-path: polygon(0 0, 65% 0, 35% 100%, 0% 100%); } }
-    @media (min-width: 1200px) {
-      .index .bg {
-        clip-path: polygon(0 0, 65% 0, 35% 100%, 0% 100%); } }
+  @media (min-width: 768px) {
+    .index .bg {
+      background-color: antiquewhite;
+      width: 100%;
+      height: 100%;
+      margin: 0%;
+      position: absolute;
+      z-index: -1;
+      clip-path: polygon(0 0, 65% 0, 35% 100%, 0% 100%); } }
+  @media (min-width: 1200px) {
+    .index .bg {
+      background-color: antiquewhite;
+      width: 100%;
+      height: 100%;
+      margin: 0%;
+      position: absolute;
+      z-index: -1;
+      clip-path: polygon(0 0, 65% 0, 35% 100%, 0% 100%); } }
   .index .primary {
     grid-area: primary;
     margin: 0%; }
@@ -60,7 +68,8 @@
         color: black; } }
     .index .primary h1 {
       font-family: cursiva;
-      font-size: 3em; }
+      font-size: 3em;
+      font-text-shadow: 2px 2px grey; }
       @media (min-width: 768px) {
         .index .primary h1 {
           font-size: 6em; } }
@@ -68,9 +77,10 @@
         .index .primary h1 {
           font-size: 6em; } }
     .index .primary p {
-      font-size: 1em;
+      font-size: 1.5em;
       color: black;
-      font-family: "Roboto-BlackItalic"; }
+      font-family: "Roboto-BlackItalic";
+      text-shadow: 2px 2px white; }
     .index .primary a {
       background-color: burlywood;
       color: black;
@@ -110,26 +120,32 @@
       grid-template-rows: auto auto auto auto auto;
       grid-template-areas: "header header" "caja0 caja0" "caja1 caja2" "caja4 caja3" "footer footer"; } }
   .cont1 header, .cont1 footer {
-    grid-area: header; }
+    grid-area: header;
+    margin: 0%; }
   .cont1 .caja1 {
-    grid-area: caja1; }
+    grid-area: caja1;
+    margin: 0%; }
   .cont1 .caja2 {
     grid-area: caja2;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin: 0%; }
   .cont1 .caja0 {
     grid-area: caja0;
     display: flex;
     justify-content: space-between;
     margin-top: 20px; }
   .cont1 .caja3 {
-    grid-area: caja3; }
+    grid-area: caja3;
+    margin: 0%; }
   .cont1 .caja4 {
     grid-area: caja4;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin: 0%; }
   .cont1 footer {
-    grid-area: footer; }
+    grid-area: footer;
+    margin: 0%; }
 
 body {
   background-color: #debd81;
@@ -290,18 +306,26 @@ div .carru {
 
 /*pagina promociones*/
 .promo {
-  width: 58%;
+  width: 75%;
   border-style: groove;
   border-width: 8px;
-  margin-bottom: 5px; }
+  margin-bottom: 1em; }
+  @media (min-width: 768px) {
+    .promo {
+      width: 58%; } }
+  @media (min-width: 1200px) {
+    .promo {
+      width: 58%; } }
 
 .inframe {
   border-style: groove;
-  border-width: 8px; }
+  border-width: 8px;
+  margin: 0%; }
 
 .tarj {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  width: 100vw; }
   .tarj section {
     margin: 5px;
     width: 18em; }
@@ -313,52 +337,63 @@ div .carru {
         margin-left: 1em; } }
 
 /*css para pagina contacto*/
-.maincontacto {
+.contacto {
   margin: 0%;
-  padding: 0%; }
+  width: 100vw; }
+  .contacto .containerForm {
+    width: 50%;
+    background-image: url(../img/medialunas.webp);
+    background-repeat: no-repeat;
+    opacity: 0.75;
+    background-size: cover;
+    padding: 20px;
+    margin-bottom: 2em; }
+  .contacto .campos-form {
+    display: flex;
+    flex-direction: column; }
+  .contacto .label-form {
+    font-family: sans-serif;
+    color: #ffffff; }
+  .contacto #botonEnviar {
+    width: 100px;
+    height: 40px;
+    color: grey;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    border-radius: 5px;
+    margin: 1em;
+    transition: all s; }
+    .contacto #botonEnviar:hover {
+      background-image: linear-gradient(burlywood, gold);
+      font-size: larger; }
 
-fieldset {
+/*page gracias*/
+.grs {
   background-image: url(../img/medialunas.webp);
-  opacity: 0.75;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "Roboto-Italic";
-  color: white;
-  padding-left: 15px;
-  margin-bottom: 2em; }
-  @media (min-width: 768px) {
-    fieldset {
-      margin-left: 20%;
-      margin-right: 20%;
-      margin-bottom: 10%;
-      padding-left: 15px; } }
-  @media (min-width: 1200px) {
-    fieldset {
-      margin-left: 20%;
-      margin-right: 20%;
-      margin-bottom: 10%;
-      padding-left: 15px; } }
+  height: 100%;
+  width: 100vw; }
+  .grs h3 {
+    font-family: cursiva;
+    font-size: 2em;
+    color: #100f0f;
+    text-shadow: 3px 3px grey; }
+    @media (min-width: 768px) {
+      .grs h3 {
+        font-size: 6em; } }
+    @media (min-width: 1200px) {
+      .grs h3 {
+        font-size: 6em; } }
+  .grs p {
+    font-size: 1em;
+    color: white;
+    font-family: "Roboto-Italic";
+    text-shadow: 3px 3px grey; }
+    @media (min-width: 768px) {
+      .grs p {
+        font-size: 2em;
+        text-shadow: 3px 3px grey; } }
 
-legend {
-  font-family: "Roboto-BlackItalic";
-  font-size: 2em;
-  text-align: center; }
-
-label {
-  display: block;
-  padding: 5px; }
-
-.gender {
-  padding: 10px; }
-
-.txt {
-  margin-top: 10px;
-  margin-bottom: 2px; }
-
-input .enviar .reset {
-  margin: 1em;
-  transition: all 2s; }
-
-input:hover {
-  background-image: linear-gradient(burlywood, gold);
-  font-size: larger; }
+.gracias {
+  margin-top: 5rem; }

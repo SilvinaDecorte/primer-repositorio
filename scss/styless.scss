@@ -1,10 +1,12 @@
 * {
-    margin: 0%;
+    box-sizing: border-box;
 }
 
+/*import variables y mixins*/
 @import 'variables';
 @import 'mixins';
 
+/*mapa*/
 @function color($color-name) {
     @return map-get($color, $color-name);
 }
@@ -21,34 +23,40 @@
 }
 
 /*pagina Bienvenidos index*/
+
 .index {
     height: 100vh;
     margin: 0%;
 
     .bienv {
         height: 100%;
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
         background-image: url(../img/medialunas.webp);
-        position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     .bg {
-        background-color: color(secundary);
-        width: 100%;
-        height: 100%;
-        margin: 0%;
-        position: absolute;
-        z-index: -1;
-        clip-path: polygon(0 0, 35% 0, 65% 100%, 0 100%);
-
         @include desktop {
+            background-color: color(secundary);
+            width: 100%;
+            height: 100%;
+            margin: 0%;
+            position: absolute;
+            z-index: -1;
             clip-path: polygon(0 0, 65% 0, 35% 100%, 0% 100%);
         }
 
         @include xxl {
+            background-color: color(secundary);
+            width: 100%;
+            height: 100%;
+            margin: 0%;
+            position: absolute;
+            z-index: -1;
             clip-path: polygon(0 0, 65% 0, 35% 100%, 0% 100%);
-
         }
     }
 
@@ -72,6 +80,7 @@
             font: {
                 family: cursiva;
                 size: 3em;
+                text-shadow: 2px 2px grey;
             }
 
             @include desktop {
@@ -84,9 +93,10 @@
         }
 
         p {
-            font-size: 1em;
+            font-size: 1.5em;
             color: black;
             font-family: $font-1;
+            text-shadow: 2px 2px white;
         }
 
         a {
@@ -155,10 +165,12 @@
 
     header {
         grid-area: header;
+        margin: 0%;
     }
 
     .caja1 {
         grid-area: caja1;
+        margin: 0%;
 
     }
 
@@ -166,6 +178,7 @@
         grid-area: caja2;
         display: flex;
         justify-content: center;
+        margin: 0%;
     }
 
     .caja0 {
@@ -177,16 +190,20 @@
 
     .caja3 {
         grid-area: caja3;
+        margin: 0%;
     }
 
     .caja4 {
         grid-area: caja4;
         display: flex;
         justify-content: center;
+        margin: 0%;
+
     }
 
     footer {
         grid-area: footer;
+        margin: 0%;
     }
 }
 
@@ -406,20 +423,29 @@ div .carru {
 
 /*pagina promociones*/
 .promo {
-    width: 58%;
+    width: 75%;
     border-style: groove;
     border-width: 8px;
-    margin-bottom: 5px;
+    margin-bottom: 1em;
+
+    @include desktop{
+        width: 58%;
+    }
+    @include xxl{
+        width: 58%;
+    }
 }
 
 .inframe {
     border-style: groove;
     border-width: 8px;
+    margin: 0%;
 }
 
 .tarj {
     display: flex;
     justify-content: space-around;
+    width: 100vw;
 
     section {
         margin: 5px;
@@ -437,64 +463,85 @@ div .carru {
 }
 
 /*css para pagina contacto*/
-.maincontacto {
+.contacto {
     margin: 0%;
-    padding: 0%
+    width: 100vw;
+
+    .containerForm {
+        width: 50%;
+        background-image: url(../img/medialunas.webp);
+        background-repeat: no-repeat;
+        opacity: 0.75;
+        background-size: cover;
+        padding: 20px;
+        margin-bottom: 2em;
+    }
+
+    .campos-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .label-form {
+        font-family: sans-serif;
+        color: #ffffff;
+    }
+
+    #botonEnviar {
+        width: 100px;
+        height: 40px;
+        color: grey;
+        background-color: #ffffff;
+        font-family: sans-serif;
+        border-radius: 5px;
+        margin: 1em;
+        transition: all s;
+
+        &:hover {
+            background-image: $color-btn;
+            font-size: larger;
+        }
+    }
 }
 
-fieldset {
+/*page gracias*/
+.grs {
     background-image: url(../img/medialunas.webp);
-    opacity: 0.75;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: $font-2;
-    color: white;
-    padding-left: $padding;
-    margin-bottom: 2em;
+    height: 100%;
+    width: 100vw;
 
-    @include desktop {
-        margin-left: 20%;
-        margin-right: 20%;
-        margin-bottom: 10%;
-        padding-left: $padding;
+    h3 {
+        font-family: cursiva;
+        font-size: 2em;
+        color: rgb(16, 15, 15);
+        text-shadow: 3px 3px grey;
+
+
+        @include desktop {
+            font-size: $size-3
+        }
+
+        @include xxl {
+            font-size: $size-3;
+        }
     }
 
-    @include xxl {
-        margin-left: 20%;
-        margin-right: 20%;
-        margin-bottom: 10%;
-        padding-left: $padding;
+    p {
+        font-size: 1em;
+        color: white;
+        font-family: $font-2;
+        text-shadow: 3px 3px grey;
+
+        @include desktop {
+            font-size: 2em;
+            text-shadow: 3px 3px grey;
+
+        }
     }
 }
 
-legend {
-    font-family: $font-1;
-    font-size: 2em;
-    text-align: center;
-}
-
-label {
-    display: block;
-    padding: 5px;
-}
-
-.gender {
-    padding: 10px;
-}
-
-.txt {
-    margin-top: 10px;
-    margin-bottom: 2px;
-}
-
-input {
-    .enviar .reset {
-        margin: 1em;
-        transition: all 2s;
-    }
-
-    &:hover {
-        background-image: $color-btn;
-        font-size: larger;
-    }
+.gracias {
+    margin-top: 5rem;
 }
