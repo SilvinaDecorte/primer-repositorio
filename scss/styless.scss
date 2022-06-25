@@ -19,7 +19,7 @@
 
 @font-face {
     font-family: "Roboto-Italic";
-    src: url(../fonts/Roboto-Italic.ttf)
+    src: url(../fonts/Roboto-Italic.ttf);
 }
 
 /*pagina Bienvenidos index*/
@@ -73,7 +73,7 @@
         @include xxl {
             text-align: left;
             margin: 4em 0 0 4em;
-            color: $color-tex
+            color: $color-tex;
         }
 
         h1 {
@@ -85,7 +85,7 @@
             }
 
             @include desktop {
-                font-size: $size-3
+                font-size: $size-3;
             }
 
             @include xxl {
@@ -172,7 +172,6 @@
     .caja1 {
         grid-area: caja1;
         margin: 0%;
-
     }
 
     .caja2 {
@@ -199,7 +198,6 @@
         display: flex;
         justify-content: center;
         margin: 0%;
-
     }
 
     footer {
@@ -218,15 +216,15 @@ body {
     h1 {
         font: {
             family: cursiva;
-            size: 4em;
+            size: 2em;
         }
 
         @include desktop {
-            font-size: $size-3
+            font-size: 4em;
         }
 
         @include xxl {
-            font-size: $size-3;
+            font-size: 5em;
         }
     }
 
@@ -253,7 +251,6 @@ body {
             size: 1em;
         }
     }
-
 }
 
 a {
@@ -324,11 +321,11 @@ div {
     border-width: 8px;
 
     @include desktop {
-        margin: $size-a-ft
+        margin: $size-a-ft;
     }
 
     @include xxl {
-        margin: $size-a-ft
+        margin: $size-a-ft;
     }
 }
 
@@ -415,7 +412,7 @@ div .carru {
 .ipastel {
     width: 30%;
     margin: 1em;
-    padding: 0%
+    padding: 0%;
 }
 
 .ibombom {
@@ -447,7 +444,6 @@ div .carru {
 .tarj {
     display: flex;
     justify-content: space-around;
-    width: 100vw;
 
     section {
         margin: 5px;
@@ -467,7 +463,6 @@ div .carru {
 /*css para pagina contacto*/
 .contacto {
     margin: 0%;
-    width: 100vw;
 
     .containerForm {
         width: 50%;
@@ -475,7 +470,7 @@ div .carru {
         background-repeat: no-repeat;
         opacity: 0.75;
         background-size: cover;
-        padding: 20px;
+        padding: 10px;
         margin-bottom: 2em;
     }
 
@@ -492,12 +487,12 @@ div .carru {
     #botonEnviar {
         width: 100px;
         height: 40px;
-        color: grey;
+        color: black;
         background-color: #ffffff;
         font-family: sans-serif;
         border-radius: 5px;
         margin: 1em;
-        transition: all s;
+        transition: all 1s;
 
         &:hover {
             background-image: $color-btn;
@@ -522,7 +517,7 @@ div .carru {
 
 
         @include desktop {
-            font-size: $size-3
+            font-size: $size-3;
         }
 
         @include xxl {
